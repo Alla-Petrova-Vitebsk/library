@@ -1,0 +1,37 @@
+:root {
+  --black: #000;
+  --dark: #0C0C0E;
+  --sand: #BB945F;
+  --white: #FFF;
+  --gray: #8E8E8E;
+}
+
+* {
+  padding: 0;
+  margin: 0, auto;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+header {
+  height: 90px;
+  background-color: var(--dark);
+}
+
+.welcome {
+  height: 600px;
+  background-image: url(../assets/img/welcome/Welcome.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
