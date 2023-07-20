@@ -22,16 +22,40 @@ body {
 
 .wrapper {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
   height: 90px;
   background-color: var(--dark);
+  color: var(--white);
+  border: 1px solid white;
 }
 
 .welcome {
   height: 600px;
-  background-image: url(../assets/img/welcome/Welcome.png);
-  background-size:cover;
-  background-repeat: no-repeat;
+  color: var(--white);
+}
+
+.welcome-text {
+  height: 220px;
+  width: 600px;
+  background-color: var(--black);
+  position: relative;
+  bottom: 380px;
+}
+
+.welcome-text h2 {
+  margin: 0;
+  padding: 35px 40px;
+  font-family: Forum;
+  font-size: 40px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.welcome-text h2 span {
+  display: block;
 }
