@@ -20,6 +20,38 @@ body {
   font-family: Inter, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+list-style: none;
+}
+
+.section-title {
+  margin: 0;
+  font-family: Forum;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 20px;
+  color: var(--dark);
+  position: relative;
+}
+
+.section-title::after {
+content: "";
+position: absolute;
+background-color: var(--dark);
+width: 50px;
+height: 1px;
+bottom: -20px;
+left:48%;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -30,6 +62,24 @@ header {
   background-color: var(--dark);
   color: var(--white);
   border: 1px solid white;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-menu {
+  display: flex;
+}
+
+header h1 {
+  height: 58px;
+  width: 338px;
+  margin: 0;
+  font-family: Forum;
+  font-size: 35px;
+  line-height: 57.5px;
+  font-weight: normal;
 }
 
 .welcome {
@@ -56,6 +106,17 @@ header {
   text-align: center;
 }
 
-.welcome-text h2 span {
-  display: block;
+.about {
+  height: 837px;
+  border: 1px solid black;
+}
+
+.favorites {
+  height: 1439px;
+  border: 1px solid black;
+}
+
+.coffeeShop {
+  height: 841px;
+  border: 1px solid black;
 }
