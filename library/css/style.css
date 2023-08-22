@@ -25,10 +25,63 @@ a {
   color: var(--white);
 }
 
-ul {
-list-style: none;
+a:hover {
+  color: var(--sand);
+  transition: 0.5s linear;
 }
 
+.svg {
+  cursor: pointer;
+}
+
+.svg:hover {
+  filter: invert(55%) sepia(43%) saturate(258%) hue-rotate(356deg) brightness(100%) contrast(94%);
+  transition: 0.5s linear;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*header*/
+
+header {
+  height: 90px;
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 30px;
+}
+
+header h1 {
+  height: 58px;
+  width: 338px;
+  margin: 0;
+  font-family: Forum;
+  font-size: 35px;
+  line-height: 57.5px;
+  font-weight: normal;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/*main*/
 .section-title {
   margin: 0;
   font-family: Forum;
@@ -43,44 +96,16 @@ list-style: none;
 }
 
 .section-title::after {
-content: "";
-position: absolute;
-background-color: var(--dark);
-width: 50px;
-height: 1px;
-bottom: -20px;
-left:48%;
-}
-
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-header {
-  height: 90px;
+  content: "";
+  position: absolute;
   background-color: var(--dark);
-  color: var(--white);
-  border: 1px solid white;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+  width: 50px;
+  height: 1px;
+  bottom: -20px;
+  left: 48%;
 }
 
-.header-menu {
-  display: flex;
-}
-
-header h1 {
-  height: 58px;
-  width: 338px;
-  margin: 0;
-  font-family: Forum;
-  font-size: 35px;
-  line-height: 57.5px;
-  font-weight: normal;
-}
+/*welcome*/
 
 .welcome {
   height: 600px;
@@ -118,5 +143,15 @@ header h1 {
 
 .coffeeShop {
   height: 841px;
+  border: 1px solid black;
+}
+
+.ourContacts {
+  height: 575px;
+  border: 1px solid black;
+}
+
+.digitalLibraryCards {
+  height: 614px;
   border: 1px solid black;
 }
