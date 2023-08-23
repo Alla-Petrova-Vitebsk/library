@@ -81,6 +81,68 @@ header h1 {
   gap: 40px;
 }
 
+/*footer*/
+footer {
+  height: 250px;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footer-info {
+  color: var(--white);
+  height: 90px;
+  width: 1400px;
+  padding-top: 20px;
+}
+
+.footer-adress {
+  display: flex;
+  justify-content: space-between;
+ }
+
+.timetable {
+  text-align: right;
+}
+
+.social {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icons {
+display: flex;
+gap:15px;
+margin:0;
+}
+
+.footer-line {
+  width: 1400px;
+  height: 1px;
+  background-color: var(--white);
+}
+
+.footer-rss {
+  color: var(--white);
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 44px;
+  width: 1400px;
+}
+
+
 /*main*/
 .section-title {
   margin: 0;
